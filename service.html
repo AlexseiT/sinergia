@@ -1,0 +1,361 @@
+<!doctype html>
+    <html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/css/uikit.min.css?_v=20250120122407">
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit.min.js?_v=20250120122407"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js?_v=20250120122407"></script>
+
+    <link rel="stylesheet" href="css/style.css?_v=20250120122407">
+    <link rel="stylesheet" href="static/swiper.min.css?_v=20250120122407">
+    
+    <title>Главная</title>
+</head>
+    <body class="service">
+        <header class="header">
+    <div class="container container_padding header__container">
+        <a href="/" class="img-wrapper_contain header__logo">
+            <img src="images/logo.svg">
+        </a>
+        <ul id="main-menu" class="ul_standart header__menu header__menu_main">
+            <li class=""><a>О компании</a></li>
+            <li class="menu-item">
+                <a>Решения и услуги</a>
+                <ul class="ul_standart sub-menu">
+                    <img src="images/rec-bg.svg">
+                    <li><a>Бизнес-решения</a></li>
+                    <li class="sub-menu__elem-custom"><a>Аналитические решения</a></li>
+                    <li><a>Заказная разработка информационных систем</a></li>
+                    <li><a>Тестирование ПО</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a>Проекты</a>
+                <ul class="ul_standart sub-menu">
+                    <img src="images/rec-bg.svg">
+                    <li><a>Бизнес-решения</a></li>
+                    <li class="sub-menu__elem-custom"><a>Аналитические решения</a></li>
+                    <li><a>Заказная разработка информационных систем</a></li>
+                    <li><a>Тестирование ПО</a></li>
+                </ul>
+            </li>
+            <li class=""><a>Медиацентр</a></li>
+            <li class=""><a>Контакты</a></li>
+        </ul>
+        <div class="header__burger-block">
+            <div id="burger-button" class="header__burger-button"></div>
+            <ul id="burger-menu" class="ul_standart header__menu header__menu_mobile">
+                <li class="">
+                    <a>О компании</a>
+                </li>
+                <li class="">
+                    <a>Решения и услуги</a>
+                    <ul class="ul_standart sub-menu">
+                        <li><a>Бизнес-решения</a></li>
+                        <li class="sub-menu__elem-custom"><a>Аналитические решения</a></li>
+                        <li><a>Заказная разработка информационных систем</a></li>
+                        <li><a>Тестирование ПО</a></li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a>Проекты</a>
+                    <ul class="ul_standart sub-menu">
+                        <li><a>Бизнес-решения</a></li>
+                        <li class="sub-menu__elem-custom"><a>Аналитические решения</a></li>
+                        <li><a>Заказная разработка информационных систем</a></li>
+                        <li><a>Тестирование ПО</a></li>
+                    </ul>
+                </li>
+                <li class=""><a>Медиацентр</a></li>
+                <li class=""><a>Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+        <main class="main">
+            <section class="hero">
+    <div class="container container_padding hero__container">
+        <div class="hero__content">
+            <div class="hero__content-back img-wrapper_cover"><img src="images/hero-back.png"></div>
+            <div class="hero__service">
+            </div>
+            <div class="hero__service-wrapper">
+                <div class="hero__service-content">
+                    <span class="text_black text_head">Аналитические решения</span>
+                    <span class="text_big">Данные — цифровой актив</span>
+                    <a class="text_standart btn btn_white">Связаться с нами</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+            <section class="section text-block">
+    <div class="container container_padding text-block__container">
+        <span class="text_large">Мы предлагаем современные аналитические решения, которые помогают нашим клиентам принимать обоснованные, стратегические решения. Наши технологии позволяют анализировать большие объёмы данных, выявлять скрытые закономерности и прогнозировать будущие тенденции.</span>
+    </div>
+</section>
+            <section class="section decisions">
+    <div class="container decisions__container">
+        <div class="title-back">
+            <h2 class="text_medium text_min-head title-back__title">Решения и услуги</h2>
+            <div class="img-wrapper_contain title-back__back"><img src="images/title-back.png"></div>
+        </div>
+        <div class="decisions__grid">
+            <div class="decisions__card">
+                <span class="img-wrapper_contain decisions__img-wrapper text_over" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 150">
+                    <img src="images/decisions1.svg">
+                </span>
+                <span class="text_standart text_black decisions__title">Управление мастер-данными</span>
+                <span class="text_min decisions__description">Осуществляет внедрение решений НСИ, MDM, Data Governance. Поможем использовать данные как ценный актив для удовлетворения потребностей цифрового бизнеса.</span>
+            </div>
+            <div class="decisions__card">
+                <span class="img-wrapper_contain decisions__img-wrapper text_over" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 250">
+                    <img src="images/decisions2.svg">
+                </span>
+                <span class="text_standart text_black decisions__title">Аналитические системы поддержки принятия решений (BI)</span>
+                <span class="text_min decisions__description">Внедряем информационные системы направленные на поддержку принятия решений путем преобразования информации из разных источников в удобную и понятную аналитику с визуализацией данных - в аналитическую панель (АП; дашборд)</span>
+            </div>
+            <div class="decisions__card">
+                <span class="img-wrapper_contain decisions__img-wrapper text_over" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 350">
+                    <img src="images/decisions3.svg">
+                </span>
+                <span class="text_standart text_black decisions__title">Построение хранилищ данных</span>
+                <span class="text_min decisions__description">Обеспечим единый источник достоверной информации для бизнеса, предоставляющий доступ к актуальным данным в реальном времени. </span>
+            </div>
+            <div class="decisions__card">
+                <span class="img-wrapper_contain decisions__img-wrapper text_over" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 450">
+                    <img src="images/decisions4.svg">
+                </span>
+                <span class="text_standart text_black decisions__title">Big Data и машинное обучение</span>
+                <span class="text_min decisions__description">Возможность использования искусственного интеллекта, который обучается на большом объеме информации, что обеспечивает точное прогнозирование и принятие решений на новых данных.</span>
+            </div>
+            <div class="decisions__card">
+                <span class="img-wrapper_contain decisions__img-wrapper text_over" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 550">
+                    <img src="images/decisions5.svg">
+                </span>
+                <span class="text_standart text_black decisions__title">Искусственный интеллект</span>
+                <span class="text_min decisions__description">Внедрение ИИ в бизнес-процесс с целью автоматизации, повышения эффективности и оптимизации стратегии компании. Благодаря анализу данных, вы получаете единую информацию о клиентах и их предпочтениях, что позволяет предлагать индивидуальные продукты и разрабатывать стратегию взаимодействия.</span>
+            </div>
+            <div class="decisions__card">
+                <span class="img-wrapper_contain decisions__img-wrapper text_over" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 650">
+                    <img src="images/decisions6.svg">
+                </span>
+                <span class="text_standart text_black decisions__title">Роботизация бизнес-процессов</span>
+                <span class="text_min decisions__description">Инструмент автоматизации повторяющихся и трудоёмких процессов, которые выполняются большим количеством сотрудников. Роботизация процессов повышает производительность, снижает рутину, уменьшает количество ошибок, оптимизирует ресурсы и улучшает удовлетворённость клиентов.</span>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section faq">
+    <div class="container faq__container">
+        <div class="title-back">
+            <h2 class="text_medium text_min-head title-back__title">Технологии</h2>
+            <div class="img-wrapper_contain title-back__back"><img src="images/title-back.png"></div>
+        </div>
+        <div class="accordion faq__accordion">
+            <div class="accordion-elem">
+                <div class="accordion-elem__title-block">
+                    <span class="text_big accordion-elem__title">Управление данными</span>
+                    <div class="accordion-elem__arrow"></div>
+                </div>
+                <div class="accordion-elem__line"></div>
+                <div class="accordion-elem__hidden">
+                    <div class="accordion-elem__content-left">
+                        <span class="text_min">
+                            Адаптируем отечественные решения под вашу бизнес-модель и помогаем достичь
+                            стратегических целей. Наши услуги включают управление производством и
+                            строительством, логистикой и сбытом, финансами, кадровыми процессами.
+                        </span>
+                    </div>
+                    <div class="accordion-elem__content-right">
+                        <a class="btn btn_gray">Изучить решения</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-elem">
+                <div class="accordion-elem__title-block">
+                    <span class="text_big accordion-elem__title">Big Data и машинное обучение</span>
+                    <div class="accordion-elem__arrow"></div>
+                </div>
+                <div class="accordion-elem__line"></div>
+                <div class="accordion-elem__hidden">
+                    <div class="accordion-elem__content-left">
+                        <span class="text_min">
+                            Адаптируем отечественные решения под вашу бизнес-модель и помогаем достичь 
+                            стратегических целей. Наши услуги включают управление производством и 
+                            строительством, логистикой и сбытом, финансами, кадровыми процессами.
+                        </span>
+                    </div>
+                    <div class="accordion-elem__content-right">
+                        <a class="btn btn_gray">Изучить решения</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-elem">
+                <div class="accordion-elem__title-block">
+                    <span class="text_big accordion-elem__title">Бизнес-анализ (BI)</span>
+                    <div class="accordion-elem__arrow"></div>
+                </div>
+                <div class="accordion-elem__line"></div>
+                <div class="accordion-elem__hidden">
+                    <div class="accordion-elem__content-left">
+                        <span class="text_min">
+                            Адаптируем отечественные решения под вашу бизнес-модель и помогаем достичь 
+                            стратегических целей. Наши услуги включают управление производством и 
+                            строительством, логистикой и сбытом, финансами, кадровыми процессами.
+                        </span>
+                    </div>
+                    <div class="accordion-elem__content-right">
+                        <a class="btn btn_gray">Искусственный интеллект</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-elem">
+                <div class="accordion-elem__title-block">
+                    <span class="text_big accordion-elem__title">Хранилища данных</span>
+                    <div class="accordion-elem__arrow"></div>
+                </div>
+                <div class="accordion-elem__line"></div>
+                <div class="accordion-elem__hidden">
+                    <div class="accordion-elem__content-left">
+                        <span class="text_min">
+                            Адаптируем отечественные решения под вашу бизнес-модель и помогаем достичь 
+                            стратегических целей. Наши услуги включают управление производством и 
+                            строительством, логистикой и сбытом, финансами, кадровыми процессами.
+                        </span>
+                    </div>
+                    <div class="accordion-elem__content-right">
+                        <a class="btn btn_gray">Изучить решения</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-elem">
+                <div class="accordion-elem__title-block">
+                    <span class="text_big accordion-elem__title">Роботизация</span>
+                    <div class="accordion-elem__arrow"></div>
+                </div>
+                <div class="accordion-elem__line"></div>
+                <div class="accordion-elem__hidden">
+                    <div class="accordion-elem__content-left">
+                        <span class="text_min">
+                            Адаптируем отечественные решения под вашу бизнес-модель и помогаем достичь 
+                            стратегических целей. Наши услуги включают управление производством и 
+                            строительством, логистикой и сбытом, финансами, кадровыми процессами.
+                        </span>
+                    </div>
+                    <div class="accordion-elem__content-right">
+                        <a class="btn btn_gray">Изучить решения</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section why-decisions">
+    <div class="container why-decisions__container">
+        <div class="title-back">
+            <h2 class="text_medium text_min-head title-back__title">Почему мы?</h2>
+            <div class="img-wrapper_contain title-back__back"><img src="images/title-back.png"></div>
+        </div>
+        <div class="why-decisions__grid">
+            <div class="why-decisions__card" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 150">
+                <span class="text_standart text_black why-decisions__title">Опыт и экспертиза</span>
+                <span class="text_min why-decisions__description">Наша компания имеет многолетний опыт работы с данными, предлагая эффективные решения и высокое качество услуг</span>
+            </div>
+            <div class="why-decisions__card" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 250">
+                <span class="text_standart text_black why-decisions__title">Инновации и технологии</span>
+                <span class="text_min why-decisions__description">Мы постоянно совершенствуем методы и инструменты для работы с данными, внедряя новые технологии</span>
+            </div>
+            <div class="why-decisions__card" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 350">
+                <span class="text_standart text_black why-decisions__title">Безопасность и конфиденциальность</span>
+                <span class="text_min why-decisions__description">Мы обеспечиваем сохранность ваших данных и соблюдаем меры безопасности</span>
+            </div>
+            <div class="why-decisions__card" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 450">
+                <span class="text_standart text_black why-decisions__title">Прозрачность и открытость</span>
+                <span class="text_min why-decisions__description">Предоставляем информацию о наших процессах и методах работы с данными</span>
+            </div>
+            <div class="why-decisions__card" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 550">
+                <span class="text_standart text_black why-decisions__title">Профессионализм и ответственность</span>
+                <span class="text_min why-decisions__description">Наша команда состоит из высококвалифицированных специалистов</span>
+            </div>
+            <div class="why-decisions__card" uk-scrollspy="cls: uk-animation-slide-top; repeat: false; delay: 650">
+                <span class="text_standart text_black why-decisions__title">Лояльность и поддержка</span>
+                <span class="text_min why-decisions__description">Всегда готовы помочь и предоставить консультации</span>
+            </div>
+        </div>
+    </div>
+</section>
+            <section class="section form-block">
+    <div class="container form-block__container">
+        <div class="title-back">
+            <h2 class="text_medium text_min-head title-back__title">Начните с нами <br>работать. Это просто</h2>
+            <div class="img-wrapper_contain title-back__back"><img src="images/title-back.png"></div>
+        </div>
+        <div class="form-block__content">
+            <form class="form form-block__grid">
+                <div class="form-block__input-block">
+                    <label for="name text_min">Имя и фамилия</label>
+                    <input class="text_standart form-block__input required" type="text" name="name" id="name" required>
+                </div>
+                <div class="form-block__input-block">
+                    <label for="phone text_min">Телефон</label>
+                    <input class="text_standart form-block__input required" type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="privacy__check">
+                    <div class="privacy__radio"><img src="images/privacy.svg"></div>
+                    <span class="text_min">Я даю согласие на <a class="link_white" href="#">обработку персональных данных</a></span>
+                </div>
+                <div class="form-block__input-block">
+                    <label for="company text_min">Компания</label>
+                    <input class="text_standart form-block__input" type="text" name="company" id="company">
+                </div>
+                <div class="form-block__input-block">
+                    <label for="email text_min">Почта</label>
+                    <input class="text_standart form-block__input" type="text" name="email" id="email">
+                </div>
+                <div class="privacy__check">
+                    <div class="privacy__radio"><img src="images/privacy.svg"></div>
+                    <span class="text_min">Я ознакомлен с <a class="link_white" href="#">политикой обработки данных</a></span>
+                </div>
+                <button class="text_standart btn btn_white-opacity button-submit">Отправить</button>
+                <span class="text_standart btn btn_white-opacity active button-error">Отправить</span>
+            </form>
+            <div class="img-wrapper_contain desc form-block__back"><img src="images/form-back.png"></div>
+            <div class="form-block__back mobile"><img src="images/form-back-mobile.png"></div>
+        </div>
+    </div>
+</section>
+        </main>
+
+        <footer class="footer">
+    <div class="text_min container footer__container">
+        <div class="footer__block">
+            <span class="text_bold">© ООО «Цифровая синергия»</span>
+            <a href="tel:+74957258111" class="link_white">+7-495-725-81-11</a>
+            <a href="mailto:info@c-synergy.ru" class="link_white">info@c-synergy.ru</a>
+        </div>
+        <div class="footer__block">
+            <span class="">127434, г. Москва, вн. тер. г. Муниципальный <br>округ Тимирязевский, <br>Дмитровское шоссе, д. 9А, стр. 1</span>
+        </div>
+        <div class="footer__block">
+            <a href="#" class="link_white">Согласие на обработку персональных данных</a>
+            <a href="#" class="link_white">Политика обработки данных</a>
+            <a href="#" class="link_white">Антикоррупционная политика</a>
+        </div>
+    </div>
+</footer>
+        <script src="static/swiper.min.js?_v=20250120122407"></script>
+<script src="static/imask-7.5.0.min.js?_v=20250120122407"></script>
+<script src="js/app.min.js?_v=20250120122407"></script>
+
+    </body>
+</html> 
