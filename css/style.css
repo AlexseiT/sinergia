@@ -1176,6 +1176,7 @@ section {
 
 .hero__content {
   height: 100vh;
+  overflow: hidden;
 }
 
 .hero__content-back {
@@ -1196,8 +1197,8 @@ section {
   background: linear-gradient(180deg, #6bb6e7 0%, #4f88a1 100%);
   width: 50%;
   border-radius: 0 50px 50px 0;
-  height: 100%;
-  margin-top: 60px;
+  height: calc(100% - 70px);
+  margin-top: 70px;
 }
 
 .hero__service-content {
@@ -1883,11 +1884,17 @@ section {
   .hero__slide-content {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 120px;
   }
 
   .hero__slider-nav {
     padding-left: 15px;
     padding-right: 15px;
+    bottom: 10%;
+  }
+
+  .hero__service-content {
+    margin-top: 140px;
   }
 
   .why__grid {
@@ -2017,14 +2024,14 @@ section {
   .hero__service {
     width: 100%;
     border-radius: 0 0 50px 50px;
-    height: 60%;
+    height: 70%;
     margin-top: 0px;
   }
 
   .hero__service-content {
     height: 60%;
     gap: 30px;
-    margin-top: 120px;
+    margin-top: 100px;
     padding-left: 110px;
     padding-right: 110px;
     width: 100%;
@@ -2400,7 +2407,7 @@ section {
   .hero__service {
     width: 100%;
     border-radius: 0 0 50px 50px;
-    height: 60%;
+    height: 70%;
     margin-top: 0px;
   }
 
@@ -2419,6 +2426,16 @@ section {
 
   .hero__service-content .btn {
     padding: 13px 23px;
+  }
+
+  .hero__slider-dot {
+    gap: 8px;
+  }
+
+  .hero__slider-dot .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--white);
   }
 
   .accordion-elem__hidden {
