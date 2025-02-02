@@ -7,14 +7,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/css/uikit.min.css?_v=20250127100902">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/css/uikit.min.css?_v=20250202235847">
 
     <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit.min.js?_v=20250127100902"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js?_v=20250127100902"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit.min.js?_v=20250202235847"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.1/dist/js/uikit-icons.min.js?_v=20250202235847"></script>
 
-    <link rel="stylesheet" href="css/style.css?_v=20250127100902">
-    <link rel="stylesheet" href="static/swiper.min.css?_v=20250127100902">
+    <link rel="stylesheet" href="css/style.css?_v=20250202235847">
+    <link rel="stylesheet" href="static/swiper.min.css?_v=20250202235847">
     
     <title>Новость</title>
 </head>
@@ -87,7 +87,7 @@
             <h1 class="text_head text_black">Новости</h1>
         </div>
         <div class="link title-section__right-block">
-            <a href="/sinergia/news.html" class="text_standart link_arrow title-section__right-link">Назад ко всем новостям<img src="images/arrow-right.svg"></a>
+            <a href="/news.html" class="text_standart link_arrow title-section__right-link">Назад ко всем новостям<img src="images/arrow-right.svg"></a>
         </div>
     </div>
 </section>
@@ -164,13 +164,121 @@
         <div class="footer__block">
             <a href="#" class="link_white">Согласие на обработку персональных данных</a>
             <a href="#" class="link_white">Политика обработки данных</a>
-            <a href="#" class="link_white">Антикоррупционная политика</a>
-        </div>
+            <a href="#" class="link_white">Антикоррупционная политика</a>        </div>
     </div>
 </footer>
-        <script src="static/swiper.min.js?_v=20250127100902"></script>
-<script src="static/imask-7.5.0.min.js?_v=20250127100902"></script>
-<script src="js/app.min.js?_v=20250127100902"></script>
+<script>
+    function InitMapContact() 
+    {
+        let map_object = document.getElementById("map-contact");
+        let isMobile = document.documentElement.clientWidth < 768;
+        if (map_object) {
+            let start_lat = 55.814497;
+            let start_lon =  37.573294;
+            let normal_lat = 0.003;
+            let normal_lon = 0.005;
+            if (isMobile)
+            {
+                normal_lat = -0.000;
+                normal_lon = 0.000;
+            }
+            let map = new ymaps.Map(map_object, {
+                center: [start_lat-normal_lat, start_lon-normal_lon],
+                zoom: 15,
+                controls: []
+            });
+            let placemark = new ymaps.Placemark(
+                [start_lat, start_lon], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/images/pin.png',
+                }
+            );
+            map.geoObjects.add(placemark);
+
+
+        }
+    }
+   
+    let loadedAnalytics = false,
+        timerId;
+
+    if (navigator.userAgent.indexOf('YandexMetrika') > -1) {
+        loadAnalytics();
+    } 
+    else {
+        window.addEventListener('scroll', loadAnalytics, {
+        passive: true
+        });
+        window.addEventListener('touchstart', loadAnalytics, {
+        passive: true
+        });
+        document.addEventListener('mouseenter', loadAnalytics, {
+        passive: true
+        });
+        document.addEventListener('click', loadAnalytics, {
+        passive: true
+        });
+        /*document.addEventListener('DOMContentLoaded', loadAnalytics, {
+        });*/
+    }
+
+    timerId = setTimeout(loadAnalytics, 3000);
+   
+    function loadAnalytics(e) {
+        if (loadedAnalytics) {
+            return;
+        }
+            setTimeout(
+                function() {
+                    // yandex metrika
+                    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                    m[i].l=1*new Date();
+                    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                    /*
+                    ym(98248487, "init", {
+                            clickmap:true,
+                            trackLinks:true,
+                            accurateTrackBounce:true,
+                            webvisor:true
+                    });
+                    */
+
+                    // ya map
+                    let mapsScript = document.createElement("script");
+                    let apiKey = 'a814767b-9ac1-4885-b50e-23ea98324ad8';
+                    mapsScript.src = 'https://api-maps.yandex.ru/2.1-dev/?apikey='+apiKey+'&lang=ru_RU&_v=20240627190140';
+                    document.head.append(mapsScript);
+
+                    mapsScript.onload = function() {
+                    ymaps.ready(function() {
+                        InitMapContact();
+                    })
+                    };
+                        
+                    
+
+                }, 100
+            );
+            
+            loadedAnalytics = true;
+            clearTimeout(timerId);
+            window.removeEventListener('scroll', loadAnalytics, {
+            passive: true
+            });
+            window.removeEventListener('touchstart', loadAnalytics, {
+            passive: true
+            });
+            document.removeEventListener('mouseenter', loadAnalytics);
+            document.removeEventListener('click', loadAnalytics);
+    }
+
+</script>
+        <script src="static/swiper.min.js?_v=20250202235847"></script>
+<script src="static/imask-7.5.0.min.js?_v=20250202235847"></script>
+<script src="js/app.min.js?_v=20250202235847"></script>
 
     </body>
 </html> 
